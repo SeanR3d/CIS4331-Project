@@ -8,7 +8,7 @@ use project_db;
 
 -- customer table --
 create table customer_table(
-	customer_id			varchar(7)          auto_increment=900000000,
+	customer_id			varchar(7),
     name				varchar(50)			not null,
     requests			numeric(8)          default 0,
     primary key (customer_id)
@@ -23,7 +23,7 @@ create table order_table(
 
 -- article table --
 create table article_table(
-	article_id			varchar(8)          auto_increment=80000000,
+	article_id			varchar(8),
     customer_id			varchar(7)			not null,
     order_id			varchar(8)			not null,
     title				varchar(50) 		not null,
@@ -38,7 +38,7 @@ create table article_table(
 
 -- user table --
 create table user_table(
-	user_id				varchar(9)          auto_increment=900000000,
+	user_id				varchar(9),
     user_name			varchar(50)			not null,
     email				varchar(35)			not null,
     state				varchar(35),
@@ -51,9 +51,8 @@ create table user_table(
 
 -- comment table --
 create table comment_table(
-	comment_id			varchar(11)         auto_increment=11000000000,
-    comment_date		date				current_date,
-    comment_time		time				current_time,
+	comment_id			varchar(11),
+    comment_datetime	datetime			default current_timestamp,
     content				text				not null,
     derogatory_flag		boolean,
     primary key (comment_id)
@@ -61,7 +60,7 @@ create table comment_table(
 
 -- post table --
 create table post_table(
-	post_id				varchar(11)         auto_increment=11000000000,
+	post_id				varchar(11),
     comment_id			varchar(11),
     user_id				varchar(9),
     article_id			varchar(8),
@@ -73,7 +72,7 @@ create table post_table(
 
 -- likes/dislikes table --
 create table likes_dislikes_table(
-	likes_id			varchar(11)         auto_increment=11000000000,
+	likes_id			varchar(11),
     likes				boolean				not null,
     -- comment_id			varchar(11),
     user_id				varchar(9),
@@ -86,7 +85,7 @@ create table likes_dislikes_table(
 
 -- reply table --
 create table reply_table(
-	reply_id			varchar(11)         auto_increment=11000000000,
+	reply_id			varchar(11),
     comment_id			varchar(11),
     user_id				varchar(9),
     article_id			varchar(8),
@@ -99,7 +98,7 @@ create table reply_table(
 
 -- monitors table --
 create table monitor_table(
-	monitor_id			varchar(6)          auto_increment=6000000,
+	monitor_id			varchar(6),
     decision			boolean,
 	comment_id			varchar(11),
     user_id				varchar(9),
