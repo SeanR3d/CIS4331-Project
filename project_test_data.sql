@@ -145,20 +145,18 @@
     insert into comment_table values ('11000000014','2019-02-28', '05-33-29', 'Is fornite bad? My nine year old is on it nonstop, doing weird dance moves, buying v-bucks, talking with kids from other schools, please send help', false);
 
     -- reply comments --
-    insert into comment_table values ('11000000016','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000017','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000018','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000019','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000020','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000021','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000022','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000023','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000024','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000025','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000026','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000027','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000028','YYYY-MM-DD', 'HH-MM-SS', '', false);
-    insert into comment_table values ('11000000029','YYYY-MM-DD', 'HH-MM-SS', '', false);
+    insert into comment_table values ('11000000016','2018-04-24', '01-23-45', '', false);
+    insert into comment_table values ('11000000017','2018-04-23', '02-05-00', '', false);
+    insert into comment_table values ('11000000018','2017-11-04', '20-13-59', 'Happy Birthday!', false);
+    insert into comment_table values ('11000000019','2018-11-04', '14-21-08', 'Happy Birthday!', false);
+    insert into comment_table values ('11000000020','2019-08-23', '08-30-47', '', false);
+    insert into comment_table values ('11000000021','2019-06-05', '03-49-06', '', false);
+    insert into comment_table values ('11000000022','2018-12-25', '02-58-35', 'Merry Christmas!', false);
+    insert into comment_table values ('11000000023','2018-01-01', '05-47-24', 'Maybe this year?', false);
+    insert into comment_table values ('11000000024','2019-09-30', '06-36-13', 'When in doubt add move ACTIVATOR', false);
+    insert into comment_table values ('11000000025','2019-00-00', '07-05-32', 'Never hire a gf for data entry', false);
+    insert into comment_table values ('11000000026','2019-00-00', '08-24-51', '', false);
+    insert into comment_table values ('11000000027','2018-04-23', '09-23-55', '', false);
         
 
 
@@ -186,19 +184,19 @@
 
 -- replies --
     insert into reply_table (reply_id, comment_id, user_id, article_id)
-                        values('11000000016', '11000000016', '900000000', '80000000');
+                        values('11000000016', '11000000000', '900000000', '80000000');
 
-    insert into reply_table values ('11000000017', '11000000017', '900000000', '80000011');
-    insert into reply_table values ('11000000018', '11000000018', '900000001', '80000010');
-    insert into reply_table values ('11000000019', '11000000019', '900000002', '80000009');
-    insert into reply_table values ('11000000020', '11000000020', '900000003', '80000008');
-    insert into reply_table values ('11000000021', '11000000021', '900000004', '80000007');
-    insert into reply_table values ('11000000022', '11000000022', '900000005', '80000006');
-    insert into reply_table values ('11000000023', '11000000023', '900000006', '80000005');
-    insert into reply_table values ('11000000024', '11000000024', '900000007', '80000004');
-    insert into reply_table values ('11000000025', '11000000025', '900000008', '80000003');
-    insert into reply_table values ('11000000026', '11000000026', '900000009', '80000002');
-    insert into reply_table values ('11000000027', '11000000027', '900000010', '80000001');
+    insert into reply_table values ('11000000017', '11000000000', '900000000', '80000011');
+    insert into reply_table values ('11000000018', '11000000001', '900000001', '80000010');
+    insert into reply_table values ('11000000019', '11000000001', '900000002', '80000009');
+    insert into reply_table values ('11000000020', '11000000003', '900000003', '80000008');
+    insert into reply_table values ('11000000021', '11000000004', '900000004', '80000007');
+    insert into reply_table values ('11000000022', '11000000005', '900000005', '80000006');
+    insert into reply_table values ('11000000023', '11000000006', '900000006', '80000005');
+    insert into reply_table values ('11000000024', '11000000007', '900000007', '80000004');
+    insert into reply_table values ('11000000025', '11000000008', '900000008', '80000003');
+    insert into reply_table values ('11000000026', '11000000009', '900000009', '80000002');
+    insert into reply_table values ('11000000027', '11000000000', '900000010', '80000001');
     
 
 -- like/dislikes --
