@@ -26,7 +26,7 @@ create table article_table(
 	article_id			varchar(8),
     customer_id			varchar(7)			not null,
     order_id			varchar(8)			not null,
-    title				varchar(50) 		not null,
+    title				varchar(75) 		not null,
     author				varchar(50) 		not null,
     publication_date	datetime			default current_timestamp,
     last_updated		datetime            default current_timestamp,
