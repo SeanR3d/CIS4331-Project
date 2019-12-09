@@ -31,6 +31,7 @@ create table article_table(
     publication_date	datetime			default current_timestamp,
     last_updated		datetime            default current_timestamp,
     topic				varchar(25),
+    comments_enabled	boolean				default true,
     primary key (article_id),
     foreign key (customer_id) references customer_table(customer_id),
     foreign key (order_id) references order_table(order_id)
