@@ -1,0 +1,6 @@
+mysql
+wtforms
+flask
+flask-wtf
+mysql-connector
+gunicorn

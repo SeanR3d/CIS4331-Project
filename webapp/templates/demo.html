@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+            $(function() {
+            $('a#test').bind('click', function() {
+                $.getJSON('/get',
+                    function(data) {
+                //do nothing
+                });
+                return false;
+            });
+            });
+    </script>
+
+    <div class='container'>
+            <form action='/get'>
+                <a href=# id=test><button class='btn-primary btn-lg'>GET</button></a>
+            </form>
+
+    </div>
+
+    {# <form action="/get" method="get">
+        <button type="submit" class="btn-primary btn-lg" value="GET">GET</button>
+    </form> #}
+{% endblock content %}

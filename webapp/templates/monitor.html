@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+    <div class="media-body">
+        <h3><a class="article-title">Top 20 users by the number of comments they post:</a></h3>
+        <p class="article-content">user login: num comments</p>
+        {% for stat in stats %}
+        <p class="article-content">{{ stat.user_login }}: {{ stat.post_count }}</p>
+        {% endfor %}
+    </div>
+</article>
+{% endblock content %}

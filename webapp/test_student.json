@@ -1,0 +1,140 @@
+{
+    "integrationMessage": {
+        "action": "NEW",
+        "body": {
+            "student": {
+                "code": "code25573",
+                "createTime": "11/10/2014 08:38 AM",
+                "creator": {
+                    "objectId": 15757,
+                    "version": 29,
+                    "loginId": "tue86052",
+                    "personNumber": "",
+                    "personType": "Staff",
+                    "printName": "Nicole Westrick"
+                },
+                "description": "",
+                "name": "Kabeya Patrick Kabengele",
+                "objectId": 11223344,
+                "objectStatusCode": "active",
+                "updater": {
+                    "objectId": 1,
+                    "version": 16,
+                    "loginId": "super",
+                    "personNumber": "",
+                    "personType": "Staff",
+                    "printName": "Super User"
+                },
+                "version": 19,
+                "addresses": {
+                    "address": {
+                        "typeCode": "Foreign",
+                        "city": "Philadelphia",
+                        "country": "Canada",
+                        "effectiveDate": "08/01/2015 10:24 AM",
+                        "foreign": false,
+                        "foreignState": "",
+                        "modifiedDate": "08/01/2015 10:24 AM",
+                        "preferred": true,
+                        "provinceState": "ON",
+                        "street0": "",
+                        "street1": "3040623894301016 Street",
+                        "street2": "",
+                        "terminate": false,
+                        "postalZip": "M4S 3C3"
+                    }
+                },
+                "alternateName": "",
+                "birthDate": "12/11/2018 12:00 AM",
+                "cautionaryRequired": false,
+                "comments": "",
+                "communicationMethod": "Email",
+                "contactMethods": {
+                    "contactMethod": "Email"
+                },
+                "emails": {
+                    "email": {
+                        "emailAddress": "211813181598521@destinysolutions.com",
+                        "typeCode": "Standard",
+                        "preferred": true,
+                        "release": false,
+                        "return": false
+                    }
+                },
+                "socialSecurityNum": "",
+                "firstName1": "Kabeya",
+                "firstName2": "Patrick",
+                "interestAreaAssociations": {
+                    "interestAreaAssociation": {
+                        "objectId": 16424,
+                        "version": 35,
+                        "code": "IA0005",
+                        "name": "Intensive English Language Program (IELP)"
+                    }
+                },
+                "lastName": "Kabengele",
+                "lmsPersonId": "",
+                "loginId": "TU_X000003",
+                "netId": "",
+                "personNumber": "X000003",
+                "preferredContactTime": "Weekday afternoons",
+                "preferredEmail": {
+                    "emailAddress": "211813181598521@destinysolutions.com",
+                    "typeCode": "Standard",
+                    "preferred": true,
+                    "release": false,
+                    "return": false
+                },
+                "preferredLocaleString": "en_US",
+                "privacyQuestions": "",
+                "profileHolds": "",
+                "salutationCode": "Mr",
+                "schoolPersonnelNumber": 915222015,
+                "telephones": {
+                    "telephone": {
+                        "areaCode": 416,
+                        "preferred": true,
+                        "release": false,
+                        "tcpaConsented": false,
+                        "telephoneExt": "",
+                        "telephoneNumber": 4879052781857964,
+                        "typeCode": "Home"
+                    }
+                },
+                "acceptanceDocumentMailAddressType": "Home",
+                "copyOfVisa": false,
+                "directBillingAccount": "",
+                "documentEmailed": false,
+                "documentFaxed": false,
+                "educationHistory": "",
+                "enrolledPreviously": false,
+                "enrollmentRaces": "",
+                "enrollmentTimeframes": "",
+                "enrolmentGroups": "",
+                "internationalStudent": false,
+                "laterLifeLearner": false,
+                "learningGoals": "",
+                "otherEnrollmentTimeframe": "",
+                "otherLearningGoals": "",
+                "proficiencyExamScores": "",
+                "profileStatus": "Active",
+                "studentAssociationDetails": "",
+                "studentCategories": {
+                    "studentCategory": {
+                        "dateCreated": "11/10/2014 08:38 AM",
+                        "category": "IELP Student"
+                    }
+                },
+                "studentCredentials": "",
+                "studentNumber": "X000003",
+                "udfValues": "",
+                "willStudyInCountry": false,
+                "willTravelToCountry": false,
+                "willWorkInCountry": false,
+                "youthParticipant": false
+            }
+        },
+        "eventType": "PersonStudentUpdate",
+        "sourceSystemId": "DestinyOneCE"
+    }
+}

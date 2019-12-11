@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for comment in comments %}
+<article class="media content-section">
+    <div class="media-body">
+        <p class="article-content">{{ comment.content }}</p>
+        <form action='/admin' method="post">
+            <button class='btn-success btn-sm' type="submit" name="good_button" value="{{ comment.json }}">GOOD</button>
+            <button class='btn-danger btn-sm' type="submit" name="bad_button" value="{{ comment.json }}">BAD</button>
+        </form>
+    </div>
+</article>
+{% endfor %}
+{% endblock content %}

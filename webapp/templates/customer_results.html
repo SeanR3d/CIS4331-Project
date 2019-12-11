@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for article in articles %}
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2">{{ article.author }}</a>
+            <small class="text-muted">{{ article.date_posted }}</small>
+        </div>
+        <h2><a class="article-title">{{ article.title }}</a></h2>
+        <p class="article-content">{{ article.content }}</p>
+        <form action='/enable' method="post">
+            {% if article.comments_enabled == "1" %}
+            <button class='btn-success btn-sm' type="submit" name="button" value="{{ article }}">Enable Comments</button>
+            {% else %}
+            <button class='btn-danger btn-sm' type="submit" name="button" value="{{ article }}">Disable Comments</button>
+            {% endif %}
+        </form>
+    </div>
+</article>
+{% endfor %}
+{% endblock content %}

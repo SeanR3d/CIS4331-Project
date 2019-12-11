@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<body>
+<div class="container">
+    <h4>Customer</h4>
+    <br>
+    {% from "_formhelpers.html" import render_field %}
+    <form method=post action="/customer">
+        <dl>
+            {{render_field(form.customer_id)}}
+        </dl>
+        <p><input type=submit value=Search></p>
+    </form>
+
+    {% if error %}
+    <p class="error"><strong>Error:</strong>{{error}}</p>
+    {% endif %}
+</div>
+</body>
+
+{% endblock content %}

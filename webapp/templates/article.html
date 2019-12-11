@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{ article.author }}</a>
+            <small class="text-muted">{{ article.date_posted }}</small>
+        </div>
+        <h2><a class="article-title">{{ article.title }}</a></h2>
+        <p class="article-content">{{ article.content }}</p>
+    </div>
+</article>
+
+{% for comment in article.comments_list %}
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2">{{ comment.user_id }}</a>
+            <small class="text-muted">{{ comment.comment_datetime }}</small>
+        </div>
+        <h6><a class="article-title">{{ comment.content }}</a></h6>
+        {% for reply in comment.replies_list %}
+            <p class="article-content">{{ reply.user_id  }}: {{ reply.content }}</p>
+        {% endfor %}
+    </div>
+</article>
+<!--<div class="container">-->
+<!--    <p class="article-content">{{ comment.content }}</p>-->
+<!--</div>-->
+{% endfor %}
+
+{% endblock content %}
